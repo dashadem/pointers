@@ -1,0 +1,8 @@
+void doubling(int** arr, unsigned int N) {
+    int* b = new int [N * 2];
+    for (int i = 0; i < N; ++i) {
+        b[i] = (*arr)[i];
+    }
+    delete[] *arr;
+    *arr = b;
+}
