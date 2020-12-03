@@ -1,0 +1,10 @@
+int a, b;
+cin >> a >> b;
+int a2 = a;
+int b2 = b;
+bool t = do_some_work(&a2,&b2);
+if(t == true)
+	cout << a - b;
+else
+	cout << a + b;
+return 0;
