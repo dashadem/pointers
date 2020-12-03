@@ -1,0 +1,8 @@
+int* doubling(int* a, unsigned int size) {
+    int* b = new int[size * 2];
+    for (int i = 0; i < size; ++i) {
+        b[i] = a[i];
+    }
+    delete[] a;
+    return b;
+}
